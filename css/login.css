@@ -1,0 +1,18 @@
+.block {
+    display: block;
+}
+
+.bg {
+  background-color: red;
+  @nest .dark & {
+    background-color: blue;
+ }
+}
+
+.bg-dark {
+    background: green;
+}
+
+.dark.bg{
+    background: yellow;
+}

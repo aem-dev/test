@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome Home | FetLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body id="body">
+
+    <header class="header">
+        <div class="logo-div">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.46 38.54">
+            <path class="logo"
+                  d="M7.68,19.64C5.57,22.47,6,26.15,7.71,29,10.57,33.88,18.1,36.48,25,46c6.9-9.56,14.43-12.16,17.29-17,
+                  1.7-2.9,2.16-6.66-.08-9.5,3.48-9.08-2.27-12-2.27-12s-.5,6.81-4.35,8.44A10.31,10.31,0,0,0,25,21.12,10.31,
+                  10.31,0,0,0,14.3,16h0S10.81,14.85,10,7.5c0,0-5.76,3.09-2.2,12.19"
+                  transform="translate(-6.27 -7.5)"
+                  fill="blue"/>
+            </svg>
+        </div>
+        <div class="right-header-div">
+            <div class="login-div">
+                <p><a href="login.html" class="login-link-1">Already a member?</a></p>
+                <p><a href="login.html" class="login-link-2">Log In</a></p>
+            </div>
+            <a href="register.html"><button class="joinBtn">Join FetLife</button></a>
+            <nav class="nav-div">
+                <a onclick="toggleMenu()">
+                    <i onclick=swapIcon(this) class="bi bi-list openMenuBtn" id="openMenuBtn"></i>
+                </a>
+                <div class="menuList" id="nav-menu" onmouseleave="closeMenu()">
+                    <div class="menuDiv" id="menu1">
+                        <section class="menuSection">
+                            <p><a href="register.html" class="menuItem">Join FetLife</a></p>
+                            <p><a href="login.html" class="menuItem">Log In</a></p>
+
+                        </section>
+                    </div>
+                    <div class="menuDiv menu2" id="menu2">
+                        <section class="menuSection">
+                            <p><a href="register.html" class="menu2">Add FetLife to Home Screen</a></p>
+                            <p><a href="login.html" class="menu2">Help</a></p>
+
+                        </section>
+                    </div>
+                    <div class="menuDiv menu3" id="menu3">
+                        <section class="menuSection section2">
+                            <ul>
+                                <li><a href="new.html">What's New</a></li>
+                                <li><a href="team.html">Meet the Team</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="wallpapers.html">FetLife Wallpapers</a></li>
+                                <li><a href="source.html">Open Source</a></li>
+                                <li><a href="bug.html">Security Bug Bounty</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="kinktionary.html">Kinktionary</a></li>
+                                <li><a href="advertising.html">Advertising</a></li>
+                                <li><a href="advertiser.html">All Advertisers</a></li>
+                                <li><a href="guidelines.html">Guidelines</a></li>
+                                <li><a href="safety.html">Trust & Safety</a></li>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Use</a></li>
+                                <li><a href="transparency.html">Transparency</a></li>
+                            </ul>
+
+                        </section>
+                    </div>
+                    <div class="menuDiv menu4" id="menu4">
+                        <div class="bitLoveDiv">
+                            <svg id="fetlife-icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.46 38.54">
+                            <path class="logo2"
+                                  d="M7.68,19.64C5.57,22.47,6,26.15,7.71,29,10.57,33.88,18.1,36.48,25,46c6.9-9.56,14.43-12.16,17.29-17,
+                                  1.7-2.9,2.16-6.66-.08-9.5,3.48-9.08-2.27-12-2.27-12s-.5,6.81-4.35,8.44A10.31,10.31,0,0,0,25,21.12,10.31,
+                                  10.31,0,0,0,14.3,16h0S10.81,14.85,10,7.5c0,0-5.76,3.09-2.2,12.19"
+                                  transform="translate(-6.27 -7.5)"
+                                  fill="blue"/>
+                            </svg>
+                            <p><a href="terms.html" class="menu5">BitLove © 2022</a></p>
+                        </div>
+                        <div>
+                            <p class="greyText">
+                                If you can read this, you have really
+                                <br>good eye-sight! - John 4:69
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <div class="mainVPadding">
+            <div class="mainHDiv">
+                <div class="mainHMargin">
+                    <div class="mainPadding">
+                        <div class="mainSectionPadding">
+                            <div class="mainSection">
+
+                                <div class="mainH1">
+                                    <h1>
+                                        FetLife is the Social Network for the BDSM,
+                                        Fetish & Kinky Community.
+                                    </h1>
+                                </div>
+                                <div class="mainP">
+                                    <p>
+                                        Like Facebook, but run by kinksters like you and me. We think it is
+                                        more fun that way. Don't you?
+                                    </p>
+                                </div>
+                                <div class="mainBtn">
+                                    <button id="mainBtn">
+                                        Join FetLife
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="statsDiv">
+            <div class="statsVPadding">
+                <div class="statsFlexDiv">
+                    <div class="statsMembers">
+                        <div class="statsMembersAmount">
+                            10,242,170
+                        </div>
+                        <div class="statsMembersText">
+                            Members
+                        </div>
+                    </div>
+                    <p class="statsMain">
+                        are sharing <span>66,248,663 pictures</span> and <span>1,911,190 videos</span>,
+                        participating in <span>12,336,251 discussions</span> in <span>155,619 groups</span>,
+                        going to <span>1,101,542 upcoming events</span>,
+                        and reading <span>4,636,003 blog posts</span>.
+                        Kinky heaven!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="linksDiv">
+            <div class="linksBPadding">
+                <div class="linksFlexDiv">
+                    <div class="linksFlex">
+                        <div class="linksSection">
+                            <table class="linksTable" id="table1">
+                                <tr class="linksList">
+                                    <th>About FetLife</th>
+                                    <td>Meet the Team</td>
+                                    <td>What's New</td>
+                                    <td>Advertising</td>
+                                    <td>Open Source</td>
+                                    <td>Careers</td>
+                                </tr>
+                            </table>
+                            <table class="linksTable">
+                                <tr class="linksList">
+                                    <th>Community</th>
+                                    <td>Trust & Safety</td>
+                                    <td>Transparency</td>
+                                    <td>Guiding Values</td>
+                                    <td>Content Guidelines</td>
+                                    <td>Security Bug Bounty</td>
+                                </tr>
+                            </table>
+                            <table class="linksTable" id="table3">
+                                <tr class="linksList">
+                                    <th>Legalese</th>
+                                    <td>Privacy Policy</td>
+                                    <td>Terms of Use</td>
+                                    <td>Legal Request</td>
+                                    <td>2257 Exempt</td>
+                                </tr>
+                            </table>
+                            <table class="linksTable" id="table4">
+                                <tr class="linksList">
+                                    <th>Need Help?</th>
+                                    <td>Help</td>
+                                    <td>Kinktionary</td>
+                                    <td>Contact Us</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="linksLogoDiv">
+                            <svg class="linksLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.46 38.54" >
+                                <path
+                                      d="M7.68,19.64C5.57,22.47,6,26.15,7.71,29,10.57,33.88,18.1,36.48,25,46c6.9-9.56,14.43-12.16,17.29-17,
+                                      1.7-2.9,2.16-6.66-.08-9.5,3.48-9.08-2.27-12-2.27-12s-.5,6.81-4.35,8.44A10.31,10.31,0,0,0,25,21.12,10.31,
+                                      10.31,0,0,0,14.3,16h0S10.81,14.85,10,7.5c0,0-5.76,3.09-2.2,12.19"
+                                      transform="translate(-6.27 -7.5)"
+                                      />
+                            </svg>
+                            <p class="linksLogoText">
+                                FetLife
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linksExtraDiv">
+                <div class="linksExtraVPadding">
+                    <div class="linksExtraFlexDiv">
+                        <div class="linksExtraCopy">
+                            <p><a href="terms.html">&copy; BitLove 2022</a></p>
+                        </div>
+                        <div class="linksExtraSettings">
+                            <p><a href="extra.html">Language (EN)</a></p>
+                            <p><a href="status.html">Status</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,628 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    z-index: 3;
+    font-family: Lucida Grande,
+    Lucida Sans,
+    helvetica neue,
+    helvetica
+    arial,
+    sans-serif;
+    background-color: green;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.header {
+    z-index: 3;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+#logo {
+    width: 20px;
+}
+
+#fetlife-icon2 {
+    height: 13px;
+    margin-right: 3.75px;
+}
+
+.logo {
+    fill: #777
+}
+
+.logo2 {
+    fill: #333;
+}
+
+.logo:hover {
+    fill: #aaa;
+    cursor: pointer;
+}
+
+.right-header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 368px;
+    height: 48px;
+    background: #000;
+}
+
+.login-div {
+    display: flex;
+    margin: 0px 3.75px;
+    padding: 7.5px;
+}
+
+.login-link-1 {
+    font-size: 12.5px;
+    color: #777;
+    text-decoration: none;
+}
+
+.login-link-2 {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: #eee;
+    margin-left: 7.5px;
+}
+
+.login-link-2:hover {
+    color: #fff;
+}
+
+.joinBtn {
+    width: 108px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #ddd;
+    background-color: #444;
+    border-radius: 15px;
+    margin-right: 15px;
+
+}
+
+.joinBtn:hover {
+   font-weight: 700;
+   color: #fff;
+   background-color: #666;
+   cursor: pointer;
+}
+
+.nav-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+
+.menu-div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #000;
+}
+
+.openMenuBtn {
+    font-size: 25px;
+    color: #999;
+}
+
+.openMenuBtn:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+.menuList {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    top: 48px;
+    right: 0rem;
+    width: 380px;
+    height: 94vh;
+    background-color: #000;
+    visibility: hidden;
+}
+
+
+.menuDiv {
+    width: 100%;
+    height: 91px;
+    background-color: #000;
+    border-top: .01px solid #222;
+    padding: 15px;
+}
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    padding-left: 7.5px;
+}
+
+.menuItem {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.menu2 {
+    height: 83.5px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 0.5px;
+}
+
+.menu3{
+    width: 100%;
+    height: 244.75px;
+    background-color: #000;
+    border-top: .01px solid #222;
+    padding: 15px;
+}
+
+.menu4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 122.95px;
+    background-color: #000;
+    border-top: .01px solid #222;
+    padding: 30px;
+    justify-content: flex-start;
+    align-content: center;
+    color: white;
+    padding-top: 26px;
+}
+
+.menu5 {
+    height: 19.95px
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 0;
+    line-height: 23.8px;
+    color: #555;
+    margin-left: 1px;
+}
+
+.section2 {
+    flex-direction: row;
+    padding: 0px;
+    background-color: #000;
+}
+
+ul {
+    list-style-type: none;
+    width: 50%;
+    padding-left: 7.5px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 0;
+    line-height: 23.8px;
+    color: #555;
+}
+
+p a {
+    text-decoration: none;
+}
+.bitLoveDiv {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding-bottom: 9px;
+}
+
+.greyText {
+    color: #333;
+    text-align: center;
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.main {
+    z-index: 2;
+    top: 48px;
+    position: relative;
+    width: 100%;
+    height: 558.5px;
+    background: #111;
+    margin-bottom: 48px;
+}
+
+.mainVPadding {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    padding: 10px 0px;
+}
+
+.mainHDiv {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    margin: 0px auto;
+}
+
+.mainHMargin {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    margin: 0px auto;
+}
+
+.mainPadding {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    padding: 120px 30px;
+}
+
+.mainSectionPadding {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    padding: 30px 0px;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+
+.mainH1 {
+    width: 100%
+    background: #111;
+}
+
+.mainH1 h1 {
+    width: 720px;
+    font-family: serif;
+    font-size: 36px;
+    font-weight: 500;
+    word-spacing: 1px;
+    text-align: center;
+    color: #eee
+}
+
+.mainP {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #111;
+    margin-top: 1rem;
+}
+
+.mainP p {
+    text-align: center;
+    width: 480px;
+    color: #ccc;
+}
+
+.mainBtn {
+    width: 100%
+    background: #222;
+}
+
+.mainBtn button {
+    width: 151.74px;
+    height: 50.4px;
+    margin: 2rem;
+    background: #900;
+    color: #eee;
+    font-weight: 700;
+}
+
+.footer {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #222;
+}
+
+.statsDiv {
+    width: 100%;
+    max-width: 1260px;
+    min-height: 166px;
+    background: #222;
+    margin-bottom: 60px;
+    padding: 0px 30px;
+}
+
+.statsVPadding {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    padding: 60px 0px;
+    border-bottom: .01px solid #333;
+
+}
+
+.statsFlexDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+
+.statsMembers {
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+.statsMembersAmount {
+    align-self: center;
+    font-size: 34px;
+    font-weight: 200;
+    color: #ccc;
+    letter-spacing: -1.5px;
+}
+
+.statsMembersText {
+    align-self: center;
+    font-size: 19px;
+    font-weight: 500;
+    color: #999;
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+}
+
+.statsMain {
+    font-size: 15px;
+    color: #999;
+    line-height: 22px;
+}
+
+.statsMain span {
+    font-weight: 600;
+}
+
+.linksDiv {
+    width: 100%;
+    max-width: 1260px;
+    padding: 0px 30px;
+    background: #222;
+}
+
+.linksBPadding {
+    width: 100%;
+    background: #222;
+    padding-bottom: 60px;
+    border-bottom: .5px solid #333;
+}
+
+.linksFlexDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 258px;
+    background: #222;
+}
+
+.linksFlex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #222;
+}
+
+.linksSection {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    background: #222;
+}
+.linksSection table {
+    width: 25%;
+    height: 100%;
+    padding: 0px 7.5px;
+    background: #222;
+}
+
+#table1 {
+    padding-left: 0px;
+}
+
+#table4 {
+    padding-right: 0px;
+}
+.linksSection table tr {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.linksSection table tr th {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ccc;
+    margin-bottom: 13px;
+}
+
+.linksSection table tr td {
+    color: #888;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 34.5px;
+}
+.linksLogoDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86px;
+    height: 32px;
+    fill: #555;
+}
+
+.linksLogo {
+    height: 26px
+}
+
+.linksLogoText {
+    font-family: serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #bbb;
+    margin-left: 10px;
+}
+
+.linksExtraDiv {
+    width: 100%;
+    height: 60.95px;
+    background: #222;
+}
+
+.linksExtraVPadding {
+    width: 100%;
+    height: 100%;
+    padding: 22.5px 0px;
+    background: #222;
+}
+
+.linksExtraFlexDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+
+.linksExtraFlexDiv p a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.linksExtraSettings {
+    display: flex;
+    width: 144.5px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+    .mainSectionPadding {
+        width: 90vw;
+    }
+
+    .statsDiv {
+        padding: 0px 15px;
+    }
+    .statsFlexDiv {
+        flex-direction: column;
+    }
+
+    .statsMembers {
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    .statsMain {
+        text-align: center;
+    }
+
+    .linksDiv {
+        padding: 0px 15px;
+    }
+
+    .linksBPadding {
+        padding-bottom: 22.5px;
+    }
+
+    .linksFlex {
+        flex-direction: column;
+    }
+
+    .linksSection table {
+        width: auto;
+    }
+
+    .linksLogoDiv {
+        margin: 60px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainH1 h1{
+        width: 100%;
+    }
+
+    .mainSectionPadding {
+        width: 88vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main {
+        height: 601px;
+    }
+    .mainSectionPadding {
+        width: 84vw;
+    }
+
+    .linksSection {
+        flex-wrap: wrap;
+    }
+    .linksSection table {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+
+    #table3 {
+        padding-left: 0px;
+    }
+
+    .linksLogoDiv {
+        margin: 0px;
+    }
+}
